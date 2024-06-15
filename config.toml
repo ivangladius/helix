@@ -1,0 +1,28 @@
+
+theme = "modus_vivendi_tritanopia"
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+A-1 = ":bn"
+A-2 = ":bp"
+A-q = ":q!"
+A-w = ":w!"
+y = ":clipboard-yank"
+
+
+
+[keys.normal.space]
+"1" = ":buffer-close-others!"
+"2" = ":quit"
+"3" = ":hsplit"
+"4" = ":vsplit"
+
+
+
+[editor]
+line-number = "relative"
+mouse = true
+gutters = []
+
+[editor.file-picker]
+hidden = false

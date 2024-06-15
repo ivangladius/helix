@@ -1,0 +1,10 @@
+
+[[language]]
+name = "cpp"
+scope = "source.cpp"
+file-types = ["cpp", "cxx", "cc", "h", "hpp"]
+roots = ["compile_commands.json", ".git", ".hg"]
+auto-format = true
+language-servers = [ "clangd" ]
+injection-regex = "cpp"
+indent = { tab-width = 2, unit = "  " }
