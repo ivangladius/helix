@@ -21,7 +21,7 @@ A-b = ":run-shell-command make"
 
 [editor]
 line-number = "relative"
-mouse = true
+mouse = false
 gutters = []
 
 [editor.file-picker]
