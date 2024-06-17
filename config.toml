@@ -1,6 +1,7 @@
 
 theme = "modus_vivendi_tritanopia"
 
+
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 A-1 = ":bn"
@@ -8,6 +9,8 @@ A-2 = ":bp"
 A-q = ":q!"
 A-w = ":w!"
 A-b = ":run-shell-command make"
+A-n = ":run-shell-command zellij run -- make debug"
+A-s = ":run-shell-command g++ -g sol sol.cpp && ./sol"
 
 
 
@@ -21,8 +24,10 @@ A-b = ":run-shell-command make"
 
 [editor]
 line-number = "relative"
-mouse = false
+mouse = true
 gutters = []
+#idle-timeout = 10
+completion-timeout = 10
 
 [editor.file-picker]
 hidden = false

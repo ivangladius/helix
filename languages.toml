@@ -8,3 +8,17 @@ auto-format = true
 language-servers = [ "clangd" ]
 injection-regex = "cpp"
 indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "python"
+scope = "source.py"
+file-types = ["py"]
+roots = [".git"]
+auto-format = true
+language-servers = ["pyright"]
+injection-regex = "py"
+indent = { tab-width = 2, unit = "  " }
+[language-server.pyright.config.pyright]
+plugins.black.enabled = true
+
+
