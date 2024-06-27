@@ -1,5 +1,5 @@
 
-theme = "modus_vivendi_tritanopia"
+theme = "autumn_night"
 
 
 [keys.normal]
@@ -8,9 +8,12 @@ A-1 = ":bn"
 A-2 = ":bp"
 A-q = ":q!"
 A-w = ":w!"
-A-b = ":run-shell-command make"
-A-n = ":run-shell-command zellij run -- make debug"
-A-s = ":run-shell-command g++ -g sol sol.cpp && ./sol"
+A-b = ":run-shell-command ./build.sh build"
+A-d = ":run-shell-command ./build.sh debug"
+A-r = ":run-shell-command ./build.sh run"
+A-k = ":run-shell-command pkill main"
+"A-," = "page_cursor_half_up"
+"A-." = "page_cursor_half_down"
 
 
 
@@ -28,6 +31,7 @@ mouse = true
 gutters = []
 #idle-timeout = 10
 completion-timeout = 10
+lsp.display-inlay-hints = true
 
 [editor.file-picker]
 hidden = false
